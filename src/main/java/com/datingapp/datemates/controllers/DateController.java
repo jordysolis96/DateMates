@@ -1,4 +1,4 @@
-package com.datingapp.datemates;
+package com.datingapp.datemates.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
