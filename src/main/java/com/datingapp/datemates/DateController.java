@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DateController {
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String homeView() {
         return "home";
     }
