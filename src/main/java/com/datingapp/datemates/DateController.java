@@ -15,4 +15,9 @@ public class DateController {
     public String createView() {
         return "create";
     }
+
+    @GetMapping("/explore")
+    public String exploreView() {
+        return "explore";
+    }
 }
