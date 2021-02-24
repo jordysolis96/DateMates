@@ -20,4 +20,9 @@ public class DateController {
     public String exploreView() {
         return "explore";
     }
+
+    @GetMapping("/profile")
+    public String profileView() {
+        return "profile";
+    }
 }
