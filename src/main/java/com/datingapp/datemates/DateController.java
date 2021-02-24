@@ -10,4 +10,9 @@ public class DateController {
     public String homeView() {
         return "home";
     }
+
+    @GetMapping("/create")
+    public String createView() {
+        return "create";
+    }
 }
