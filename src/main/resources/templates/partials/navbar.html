@@ -6,13 +6,13 @@
 </head>
 <body>
 
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<nav th:fragment="navbar" class="nav navbar-nav navbar-right">
-    <div class="container-fluid">
-
-        <div class="navbar-header">
-    <a class="navbar-brand" th:href="@{/}">DateMates</a>
-    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav navbar-right">
             <li><a th:href="@{/}">Home</a></li>
             <li><a th:href="@{/profile}">Profile</a></li>
