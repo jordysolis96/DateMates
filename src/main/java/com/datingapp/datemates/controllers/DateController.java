@@ -30,20 +30,20 @@ public class DateController {
     @GetMapping("/sign-up")
     public String showsSignUpForm(Model model){
         model.addAttribute("user", new User());
-        return "sign-up";
+        return "Sign-up";
     }
 
     @PostMapping("/sign-up")
     public String saveUser(@ModelAttribute User user, Errors e, Model model) {
         if (e.hasErrors()) {
             model.addAttribute("errors", e);
-            return "sign-up";
+            return "Sign-up";
         } else if (userDao.findByUsername(user.getUsername()) != null) {
             model.addAttribute("username", user.getUsername());
-            return "sign-up";
+            return "Sign-up";
         } else if (userDao.findByEmail(user.getEmail()) != null) {
             model.addAttribute("email", user.getEmail());
-            return "sign-up";
+            return "Sign-up";
         }
 
         String password = user.getPassword();

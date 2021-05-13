@@ -60,6 +60,18 @@ public class User {
         this.password = password;
     }
 
+    public User(User copy){
+        this.username = username;
+        this.email = email;
+        this.sexuality = sexuality;
+        this.gender = gender;
+        this.location = location;
+
+        this.password = password;
+    }
+
+
+
     public long getId() {
         return id;
     }
